@@ -13,6 +13,10 @@ It's a **rebadged Hikvision NVR**. That's why:
 
 Because it's Hikvision underneath, Hikvision documentation, tools, and known vulnerabilities often apply to it too. Check the firmware version first, since that decides which ones do.
 
+## Why I Built This
+
+I built this to inventory ArcDYN ACR16-160 NVRs on a network. Given an IP address, it confirms whether the device is an ACR16-160 and reports its model, firmware version, serial number, and other details. That's the information I needed to know which unit I was looking at and how to reach its web interface (for example, to check firmware before an upgrade).
+
 ## Overview
 
 This tool queries ACR16-160 NVR devices to retrieve:
