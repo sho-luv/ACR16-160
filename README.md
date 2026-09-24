@@ -2,6 +2,17 @@
 
 A Python script to extract device information from ArcDYN Carbon 160 (ACR16-160) NVR devices over HTTP.
 
+## What Is the ArcDYN ACR16-160?
+
+ArcDYN sells security cameras and recorders. The **ACR16-160 (Carbon 160)** is one of its network video recorders (NVRs): a box that records and manages IP security cameras, has hard drives for storage, and serves a web UI on the local network.
+
+It's a **rebadged Hikvision NVR**. That's why:
+- It has Hikvision's web endpoints: `/ISAPI/...` (Hikvision's HTTP API) and `/SDK/...`
+- Its firmware is Hikvision's format (`digicap.dav`)
+- It needs ArcDYN's own firmware builds. Stock Hikvision firmware won't install on it (see `readme.txt`)
+
+Because it's Hikvision underneath, Hikvision documentation, tools, and known vulnerabilities often apply to it too. Check the firmware version first, since that decides which ones do.
+
 ## Overview
 
 This tool queries ACR16-160 NVR devices to retrieve:
